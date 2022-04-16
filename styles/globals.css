@@ -1,16 +1,79 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&family=Raleway:wght@300;600;700;800&display=swap');
+
 body {
-  padding: 0;
+  background-color: #34fa23;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+font-family: 'Nunito', sans-serif;
+  font-size: 1.5em;
 }
 
-a {
-  color: inherit;
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+header a {
   text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
-* {
+header h1, header h2 {
+  margin: 0; 
+}
+
+header span {
+  display: block;
+  line-height: 1em;
+}
+
+header span:first-child {
+  color: #ccc;
+  background-color: #333;
+  padding: 3px 0;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+header span:last-child {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+header h2 {
+  font-size: 1em;
+  font-weight: 400;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  text-transform: lowercase;
+}
+
+footer {
+  background-color: #111;
+  color: #bbb;
+  padding: 40px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.page-content {
+  max-width: 80%;
+  margin: 20px auto 80px;
+  padding: 0 20px;
+  width: 100%;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-content {
+    max-width: 1200px;
+  }
 }
