@@ -35,8 +35,8 @@ header span {
 }
 
 header span:first-child {
-  color: #ccc;
-  background-color: #333;
+  color: #333;
+  background-color: #f1f1f1;
   padding: 3px 0;
   font-size: 1em;
   font-weight: 400;
@@ -51,9 +51,10 @@ header span:last-child {
 header h2 {
   font-size: 1em;
   font-weight: 400;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+  background-color: #333;
+  color: #fff;
   text-transform: lowercase;
+  padding: 3px 0;
 }
 
 footer {

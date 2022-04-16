@@ -76,9 +76,15 @@ const BlogDetails = ({ blog }) => {
           left: -10px;
           transform: rotateZ(-1deg);
           box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+          z-index: 1;
         }
         .info p {
+          background-color: #f1f1f1;
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
           margin: 0;
+          padding: 80px 30px 30px 30px;
+          position: relative;
+          top: -100px;
         }
       `}</style>
     </div>
