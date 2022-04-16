@@ -1,6 +1,7 @@
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Image from "next/image";
+import Skeleton from "../../components/Skeleton";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -20,7 +21,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
@@ -29,6 +30,15 @@ export async function getStaticProps({ params }) {
     content_type: "techBlog",
     "fields.slug": params.slug,
   });
+
+  if (!items.length) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
 
   return {
     props: {
@@ -39,6 +49,7 @@ export async function getStaticProps({ params }) {
 }
 
 const BlogDetails = ({ blog }) => {
+  if (!blog) return <Skeleton />;
   const { title, featuredImage, contentBody } = blog.fields;
   return (
     <div>

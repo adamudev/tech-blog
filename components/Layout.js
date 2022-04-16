@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
       <div className="page-content">{children}</div>
 
       <footer>
-        <p>Copyright 2022 - Tech Blog</p>
+        <p>Copyright {new Date().getFullYear()} - .tech NEWS</p>
       </footer>
     </div>
   );
