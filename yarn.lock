@@ -29,6 +29,11 @@
   "resolved" "https://registry.npmjs.org/@contentful/rich-text-types/-/rich-text-types-15.12.0.tgz"
   "version" "15.12.0"
 
+"@corex/deepmerge@^2.6.148":
+  "integrity" "sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA=="
+  "resolved" "https://registry.npmjs.org/@corex/deepmerge/-/deepmerge-2.6.148.tgz"
+  "version" "2.6.148"
+
 "@eslint/eslintrc@^1.2.1":
   "integrity" "sha512-bxvbYnBPN1Gibwyp6NrpnFzA3YtRL3BBAyEAFVIpNTm2Rn4Vy87GA5M4aSn3InRrlsbX5N0GW7XIx+U4SAEKdQ=="
   "resolved" "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.2.1.tgz"
@@ -1163,7 +1168,15 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"next@>=10.2.0", "next@12.1.4":
+"next-sitemap@^2.5.20":
+  "integrity" "sha512-Qbm4N2WGA6VHemFN0C9PNWQav9RKwMEbVrNgVvDQhG0sDBmNBgKii54WklOjCvVJVHgQPgtXLBhlNaJGS+RVQA=="
+  "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-2.5.20.tgz"
+  "version" "2.5.20"
+  dependencies:
+    "@corex/deepmerge" "^2.6.148"
+    "minimist" "^1.2.6"
+
+"next@*", "next@>=10.2.0", "next@12.1.4":
   "integrity" "sha512-DA4g97BM4Z0nKtDvCTm58RxdvoQyYzeg0AeVbh0N4Y/D8ELrNu47lQeEgRGF8hV4eQ+Sal90zxrJQQG/mPQ8CQ=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.1.4.tgz"
   "version" "12.1.4"
